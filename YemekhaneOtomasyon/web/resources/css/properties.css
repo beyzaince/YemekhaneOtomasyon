@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+.zeroSize {
+    visibility: hidden;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    width: 0px;
+    height: 0px;
+}
+
+
+ .stil{
+                position:absolute;
+                left: 500px;
+                top:200px;
+                
+            }
+          .kolon
+{
+    opacity:0.91;
+     border-bottom:1px solid #E0E0E0;
+    border-radius: 10px;
+    border-right:1px solid #E0E0E0;
+    background:#8FBC8F;
+    color: #474747;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 125px;
+    padding:20px;
+    width: 350px;
+    height:400px;
+    box-sizing:border-box;
+    float:left;
+    font:11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+     box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+     position: center;    
+}
+
+.kolonwide{
+     border-bottom:1px solid #E0E0E0;
+    border-radius: 10px;
+    border-right:1px solid #E0E0E0;
+    background: #E0E0E0;
+    color: #474747;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 150px;
+    padding:20px;
+    width: 1500px;
+    height:1500px;
+    box-sizing:border-box;
+    float:left;
+    font:11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+     box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+     position: center; 
+    
+    
+}
+
+.button{
+    display: block;
+    margin:  auto;
+    size :50px 20px;
+   text-align: center;
+    background-color:none;
+    color:#973131;
+    font: normal 70px/1 "Aladin", Helvetica, sans-serif;
+     -webkit-box-sizing: content-box;
+    cursor: pointer;
+  font-size: 20px;
+    float:left;
+    margin-left: 30px;
+}
+
+.button2 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #A63A79;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button2:hover {background-color: #3e8e41}
+
+.button2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/* 
+    Created on : 06.May.2017, 13:08:04
+    Author     : beyza
+*/
+

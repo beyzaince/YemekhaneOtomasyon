@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <style>
+            h3
+            {
+                color:#D35400;
+            }
+           .buttonnormal{
+   
+  display: inline-block;
+  padding: 15px 15px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #A63A79;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  
+}
+ .kolonBilgi
+{
+    opacity:0.91;
+     border-bottom:1px solid #E0E0E0;
+    border-radius: 10px;
+    border-right:1px solid #E0E0E0;
+    background:#eee;
+    color: #474747;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 100px;
+    padding:20px;
+    width: 900px;
+    height:900px;
+    box-sizing:border-box;
+    float:left;
+    font:11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+     box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+     position: center; 
+     z-index: 2;
+}
+
+    
+
+        </style>
+         <h:outputStylesheet name="background.css" library="css" />
+         <h:outputStylesheet name="formdesign.css" library="css" />
+         <h:outputStylesheet name="properties.css" library="css" />
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <div class="uzunkolon"/>
+        <br></br><br></br><br></br>
+        <div class="kolonBilgi">
+        <h:dataTable value="#{personelBean.yoneticiSaatCek()}" var="myvariable"
+                     border="0" cellpadding="10" cellspacing="3" style="z-index:2" >
+
+            <h:column>
+                <f:facet name="header">KimlikNo</f:facet>
+                <h3> #{myvariable.kimlikno}</h3>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Ad</f:facet>
+                  <h3>  #{myvariable.ad}</h3>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Soyad</f:facet>
+                 <h3>   #{myvariable.soyad}</h3>
+            </h:column>
+            <h:column>
+                <f:facet name="header">calismaSaati</f:facet>
+                   <h3> #{myvariable.haftalikcalismasaati}</h3>
+            </h:column>  
+            <h:column>
+                <f:facet name="header">Saatlik maas </f:facet>
+                <h3> #{myvariable.saatlikmaas}</h3>
+            </h:column>  
+                       
+           
+            <h:column>
+                <f:facet name="header">Calisma saati Degistir / Saatlik Maas Degistir </f:facet>
+                <h:form>
+                     
+                    <h:inputText  class='textbox' style="width:50px ; height: 20px; margin-right:120px " value="#{personelBean.personelCalismaSaati}" size="3"/><b> </b> <b> </b><b> </b><b> </b><b> </b><b> </b><b> </b>
+                    <h:inputText  class='textbox' style="width:50px ; height: 20px" value="#{personelBean.personelSaatlikMaas}" size="3"/>
+                    <h:commandButton class='buttonnormal' value="güncelle" action="#{personelBean.yoneticiSaatGuncelle()}">
+                        <f:setPropertyActionListener target="#{personelBean.personelCalismaSaatiGuncellenecekTc}" value="#{myvariable.kimlikno}" />
+                    </h:commandButton>
+                </h:form>
+            </h:column>
+           
+        </h:dataTable>
+            </div>
+        <h:form>
+            <h:commandButton class='button' value="geri don" action="yoneticiSayfasi.xhtml"/>
+        </h:form>
+    </h:body>
+</html>
+

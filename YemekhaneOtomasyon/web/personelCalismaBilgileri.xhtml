@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+         <h:outputStylesheet name="background.css" library="css" />
+         <h:outputStylesheet name="formdesign.css" library="css" />
+         <h:outputStylesheet name="properties.css" library="css" />
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+       <h:dataTable value="#{personelBean.personelCalismaBilgileriCek()}" var="myvariable"
+                     border="0" cellpadding="10" cellspacing="3" >
+
+            <h:column>
+                <f:facet name="header">KimlikNo</f:facet>
+                    #{myvariable.kimlikno}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Ad</f:facet>
+                    #{myvariable.ad}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Soyad</f:facet>
+                    #{myvariable.soyad}
+            </h:column>
+            <h:column>
+                <f:facet name="header">çalisma saati</f:facet>
+                    #{myvariable.haftalikcalismasaati}
+            </h:column>         
+           <h:column>
+                <f:facet name="header">saatlik maas</f:facet>
+                    #{myvariable.saatlikmaas}
+            </h:column>
+        </h:dataTable>
+        <h:outputLink value="personelSayfasi.xhtml">Ana Sayfa</h:outputLink>
+    </h:body>
+</html>
+

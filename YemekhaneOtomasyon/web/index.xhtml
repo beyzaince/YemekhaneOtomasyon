@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!-- index.html -->
+<!-- Displays an h:dataTable of the addresses in the address book -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+     xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+         <h:outputStylesheet name="properties.css" library="css" />
+        
+         <h:outputStylesheet name="formdesign.css" library="css" />
+        <title>YEMEKHANE OTOMASYONU</title>
+        <style>
+   body {
+    
+    background-image:  url('iu_kapi.jpg');
+    background-repeat: repeat;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+   
+ 
+}
+
+            .h1
+{
+    color:#663300;
+    font-size: 32px;
+    text-align: center;
+    
+}
+ .iconDetails {
+ margin-left:35%;
+float:left; 
+height:40px;
+width:40px; 
+} 
+
+.container {
+   
+    width:100%;
+    height:auto;
+    padding:1%;
+}
+        </style>
+    </h:head>
+    <h:body class="body"> 
+            <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+  <a href="duyurular.xhtml">Duyurular</a>
+  <a href="#">İletişim</a>
+  <a href="#">About</a>
+</div>
+         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+            <br></br>                  
+                <h1 class='h1'  >YEMEKHANE OTOMASYONU </h1>
+    
+            <div class='kolon' margin-left='250px'>
+                <h:form>
+                <h2> PERSONEL GİRİŞİ</h2><br></br>
+            
+            <h:inputText class="textbox" pt:placeholder="TcNo"  value="#{personelBean.bulunacakTc}" /><br></br><br></br>
+            <h:inputSecret class="textbox" pt:placeholder="sifre"  value="#{personelBean.bulunacakSifre}" /><br></br><br></br><br></br>
+
+            
+            <h:commandButton class='button' value=" GİRİŞ" action="#{personelBean.VeriCek()}"/>
+            <h:commandButton class='button' value="YENİ KAYIT" action="personelEkle.xhtml"/><br></br><br></br>
+            <h:outputLink value = "" ><h3>Şifremi Unuttum</h3></h:outputLink> 
+               
+             </h:form>
+            </div>
+           
+            <div class='kolon'>
+                <h:form>
+                    
+                
+           <h2> MÜŞTERİ GİRİŞİ</h2><br></br>
+           
+            <h:inputText class="textbox" pt:placeholder="TcNo"  value="#{musteriBean.bulunacakTc}" /><br></br><br></br>
+
+            
+            <h:inputSecret class="textbox" pt:placeholder="sifre"  value="#{musteriBean.bulunacakSifre}" /><br></br><br></br><br></br>
+
+            
+            <h:commandButton class='button' value="GİRİŞ" action="#{musteriBean.VeriCek1()}"/>
+            
+            <h:commandButton class='button' value="YENİ KAYIT" action="musteriEkle.xhtml"/> <br></br><br></br>
+            <h:outputLink value = "" ><h3>Şifremi Unuttum</h3></h:outputLink> 
+            </h:form>
+            </div>
+            <br></br><br></br>
+            
+            
+            
+
+       
+
+           
+            
+
+        
+    </h:body>
+</html>
+

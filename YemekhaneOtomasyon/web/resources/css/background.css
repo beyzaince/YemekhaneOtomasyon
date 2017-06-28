@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+         body {
+   
+    background-image:  url('IU_Logo.jpg');
+    background-size:500px 500px;
+   background-position-x: 450px;
+   background-position-y: 150px;
+   background-repeat: no-repeat ; 
+ 
+}
+.uzunkolon
+{
+    position:fixed;
+    z-index:1;
+    height:100px;
+    width:2000px;;
+    background-color:#30BFBF;
+}
+/* 
+    Created on : 07.May.2017, 23:58:09
+    Author     : beyza
+*/
+

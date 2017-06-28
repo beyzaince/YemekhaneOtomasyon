@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+         <h:outputStylesheet name="background.css" library="css" />
+         <h:outputStylesheet name="formdesign.css" library="css" />
+         <h:outputStylesheet name="properties.css" library="css" />
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <div class="uzunkolon"></div>
+        <br></br><br></br><br></br><br></br><br></br><br></br>
+        <div class="kolonOzlük">
+            <h1>Öneri Şikayet Formu</h1>
+        <h:form>
+            <h:inputTextarea class="textbox" id="mesaj" value="#{musteriBean.musteriMesaj}"/><br></br><br></br>
+            <h:commandButton class='button2' value="mesaj gonder" action="#{musteriBean.musteriMesajGonder()}" /><br></br><br></br>
+            <h:outputLink class="textStyle" value="personelSayfasi.xhtml">Ana Sayfa</h:outputLink>
+       
+        </h:form>
+             </div> 
+    </h:body>
+</html>
+

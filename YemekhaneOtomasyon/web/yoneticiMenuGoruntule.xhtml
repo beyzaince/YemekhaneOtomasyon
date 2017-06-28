@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+         <h:outputStylesheet name="background.css" library="css" />
+         <h:outputStylesheet name="properties.css" library="css" />
+         <h:outputStylesheet name="formdesign.css" library="css" />
+         <h:outputStylesheet name="dataTable.css" library="css" />
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+       
+        <h:dataTable class="dataTable" value="#{musteriBean.musteriMenuGoruntule()}" var="myvariable"
+                     border="0" cellpadding="10" cellspacing="3" >
+
+            <h:column>
+                <f:facet name="header">Tarih</f:facet>
+                  <h4 style="text-align:center ; font-size: 15px">  #{myvariable.tarih}</h4>
+            </h:column>
+            <h:column>
+                <f:facet name="header">çorba</f:facet>
+                  <h4 style="text-align:center ; font-size: 15px">  #{myvariable.corba}</h4>
+            </h:column>
+            <h:column>
+                <f:facet name="header">ana yemek</f:facet>
+                  <h4 style="text-align:center ; font-size: 15px">  #{myvariable.anayemek}</h4>
+            </h:column>
+            <h:column>
+                <f:facet name="header">tatli</f:facet>
+                <h4 style="text-align:center ; font-size: 15px">   #{myvariable.tatli}</h4>
+            </h:column>         
+           
+        </h:dataTable>
+        <h:form>
+            <h:outputLink value="yoneticiSayfasi.xhtml">Ana Sayfa</h:outputLink>
+        </h:form>
+       
+    </h:body>
+</html>
+

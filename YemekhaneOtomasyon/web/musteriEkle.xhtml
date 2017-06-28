@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!-- addentry.html -->
+<!-- Form for adding an entry to an address book -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <style> 
+           
+        </style>
+         <h:outputStylesheet name="properties.css" library="css" />
+         <h:outputStylesheet name="background.css" library="css" />
+         <h:outputStylesheet name="formdesign.css" library="css" />
+        <title>MUSTERİ EKLEME SAYFASİ</title>
+    </h:head>
+     
+    <h:body >
+     <div class="uzunkolon"></div>  
+         <h:form>
+             
+        <div >
+             <br></br><br></br><br></br><br></br><br></br>
+            <h1 style="text-align:left; color:#006666">MÜŞTERİ EKLEME</h1>
+       
+            <h:panelGrid columns="2">
+                <h:outputText class='textStyle' value="TcKimlik:"/>
+                <h:inputText class="textbox" id="musteriKimlikNo"  required="true"
+                             requiredMessage="Tc Kimlik giriniz"
+                             value="#{musteriBean.musteriKimlikNo}" maxlength="11" />
+                <h:outputText class='textStyle' value="Şifre"/>
+                <h:inputSecret class="textbox" id="musteriSifre"  required="true"
+                             requiredMessage="Şifre giriniz"
+                             value="#{musteriBean.musteriSifre}" maxlength="20" />
+                <h:outputText class='textStyle' value="Ad:"/>
+                <h:inputText class="textbox" id="musteriAd" required="true"
+                             requiredMessage="musteriAd giriniz"
+                             value="#{musteriBean.musteriAd}" maxlength="11"/>
+                <h:outputText class='textStyle' value="Soyad:"/>
+                <h:inputText class="textbox" id="musteriSoyad" required="true"
+                             requiredMessage="soyad giriniz"
+                             value="#{musteriBean.musteriSoyad}" />
+                <h:outputText class='textStyle' value="Bolum:"/>
+                <h:inputText class="textbox" id="musteriBolum" required="true"
+                             requiredMessage="Bolum giriniz"
+                             value="#{musteriBean.musteriBolum}" maxlength="20"/>
+                
+                
+                
+                <h:commandButton class='button' value="Ekle"
+                                 action="#{musteriBean.ekle()}" onblur="tckimlikkontrolu"/>
+
+
+                <h:outputLink value="index.xhtml">Ana Sayfa</h:outputLink>
+            </h:panelGrid>
+            
+        
+        </div>
+             </h:form>
+    </h:body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+         <h:outputStylesheet name="background.css" library="css" />
+         <h:outputStylesheet name="formdesign.css" library="css" />
+         <h:outputStylesheet name="properties.css" library="css" />
+        <title>Yonetici Sayfasi</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <div class="uzunkolon"/>
+            <br></br><br></br><br></br><br></br><br></br><br></br>
+            <h:commandButton class='button2' value="Yemek Menüsü" action="yoneticiMenuGoruntule"/><br></br><br></br>
+            
+            <h:commandButton  class='button2' value="Menu Ayarlar" action="yoneticiMenuAyarla"/><br></br><br></br>
+            
+            <h:commandButton class='button2' value="Personel Ekle" action="yoneticiPersonelEkle.xhtml"/><br></br><br></br>
+            
+            <h:commandButton class='button2' value="Personel Kaydi Sil" action="yoneticiKaydiSil.xhtml"/><br></br><br></br>
+       
+            <h:commandButton class='button2' value="Çalışan saat ve maaş bilgilerini değiştir" action="yoneticiSaatDegistir.xhtml"/><br></br><br></br>
+            
+            <h:commandButton class='button2' value="Mesajları Gör" action="yoneticiMesajGor.xhtml"/><br></br><br></br>
+            
+            <h:commandButton class='button2' value="Bakiye Hareketleri" action="#{musteriBean.musteriDolumYap()}"/><br></br>
+        
+            <h:commandButton class='button2' value="Öneri Şikayet Gör" action="yoneticiOneriGor"/>
+            <div style="margin-left:1200px; top:200px">
+             <h:commandButton  class='button2' value="Çıkış Yap" action="index"/>
+             </div>
+        </h:form>
+    </h:body>
+</html>
+

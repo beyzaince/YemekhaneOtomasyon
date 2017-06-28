@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+ 
+.textbox {
+    height: 50px;
+    width: 300px;
+    border: solid 1px #E5E5E5;
+    outline:0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+    background: #FFF url('bg_form.png') left top repeat-x;
+    background: -webkit-gradient(linear, left top, left 25, from(#FFF), color-stop(4%, #EEE), to(#FFF));
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    
+}
+
+.textboxkucuk {
+    height: 20px;
+    width: 60px;
+    border: solid 1px #E5E5E5;
+    outline:0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;
+    background: #FFF url('bg_form.png') left top repeat-x;
+    background: -webkit-gradient(linear, left top, left 25, from(#FFF), color-stop(4%, #EEE), to(#FFF));
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    
+}
+          .textStyle {
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 25px;
+}
+
+.textboxkucuk :focus {  
+    border-color: #C9C9C9;  
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; 
+    } 
+
+ .textbox :focus {  
+    border-color: #C9C9C9;  
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; 
+    } 
+
+             .kolonOzlük
+             {
+    opacity:0.81;
+     border-bottom:1px solid #E0E0E0;
+    border-radius: 10px;
+    border-right:1px solid #E0E0E0;
+    background:#AFE313;
+    color: #474747;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 100px;
+    padding:20px;
+    width: 350px;
+    height:400px;
+    box-sizing:border-box;
+    float:left;
+    font:11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+     box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+     position: center;    
+             }
+/* 
+    Created on : 06.May.2017, 13:37:28
+    Author     : beyza
+*/
+

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+         <h:outputStylesheet name="background.css" library="css" />
+         <h:outputStylesheet name="properties.css" library="css" />
+         <h:outputStylesheet name="formdesign.css" library="css" />
+        <title>Facelet Title</title>
+        <style>
+  
+        </style>
+    </h:head>
+    <h:body>
+         
+        <div class="uzunkolon"></div>  
+
+        
+        <h:form>
+            <br></br><br></br><br></br><br></br><br></br><br></br>
+            <div class='kolonOzlük'>
+                
+                <br></br><br></br>
+                <h:outputText class="textStyle" style="float:left" value="Kimlik NO = "/> <b></b>
+                <h:outputText class='textStyle' value="#{musteriBean.OzlukBilgileri('kimlikno')}"/> <br></br><br></br>
+                <h:outputText class="textStyle" style="float:left" value="İsim      = "/> <b></b>
+                <h:outputText class='textStyle' value="#{musteriBean.OzlukBilgileri('ad')}"/> <br></br><br></br>
+                <h:outputText class="textStyle" style="float:left" value="Soyisim   = "/> <b></b>
+                <h:outputText class='textStyle' value="#{musteriBean.OzlukBilgileri('soyad')}"/><br></br><br></br>
+                <h:outputText class='textStyle' style="float:left" value="Bolum     = "/> <b></b>
+                <h:outputText class='textStyle' value="#{musteriBean.OzlukBilgileri('bolum')}"/> <br></br><br></br>
+                <h:outputText class="textStyle" style="float:left" value="Bakiye     = "/> <b></b>
+                <h:outputText class='textStyle' value="#{musteriBean.OzlukBilgileri('bakiye')}"/> <br></br>
+                
+            </div> 
+            <div style="position: fixed; top:200px; left:1000px" >
+            <h:commandButton  class='button2' value="bakiye dolumu yap" action="musteriBakiyeDolum.xhtml"/><br> </br><br> </br>
+            <h:commandButton class='button2' value="menu goruntule" action="musteriMenuGoruntule"/><br></br><br></br><br> </br>
+                <h:commandButton class='button2' value="oneri sikayet" action="musteriOneriSikayet"/><br></br><br></br><br> </br>
+                
+            <h:commandButton class='button2' value="çıkıs yap" action="index"/> 
+            </div>
+             
+        </h:form>
+
+    </h:body>
+</html>
+
